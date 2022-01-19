@@ -1,0 +1,7 @@
+#compilation description
+
+module load SciPy-bundle/2020.11-intel-2020b
+module load HDF5/1.10.6-iompi-2020a
+ make machine=flags -j8
+
+flags: CXXFLAGS +=  -O3 -no-multibyte-chars -march=core-avx2 -mtune=core-avx2 -fno-alias

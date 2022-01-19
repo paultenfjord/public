@@ -1,0 +1,317 @@
+Starting job 279485 on b[2312-2313] at Wed Jan 19 09:09:58 CET 2022
+
+                    _            _
+  ___           _  | |        _  \ \   Version : 4.6-642-g22cdba5-master
+ / __|  _ __   (_) | |  ___  (_)  | |   
+ \__ \ | '  \   _  | | / -_)  _   | |
+ |___/ |_|_|_| |_| |_| \___| |_|  | |  
+                                 /_/    
+ 
+ 
+
+ Reading the simulation parameters
+ --------------------------------------------------------------------------------
+ HDF5 version 1.10.6
+	 Python version 3.8.6
+	 Parsing pyinit.py
+	 Parsing 4.6-642-g22cdba5-master
+	 Parsing pyprofiles.py
+	 Parsing ../new_baseline.py
+	 Parsing Checkpoints.restart_dir='/cluster/projects/nn9496k/Smilei2021a/Smilei/workingexample_diagnostic/tochat2/'
+	 Parsing pycontrol.py
+	 Check for function preprocess()
+	 python preprocess function does not exist
+	 Calling python _smilei_check
+	 Calling python _prepare_checkpoint_dir
+	 Calling python _keep_python_running() :
+	 Code will restart
+	[WARNING] Patches distribution: hilbertian
+	[WARNING] simulation_time has been redefined from 5071.723388 to 5071.555450 to match timestep.
+ 
+
+ Geometry: 2Dcartesian
+ --------------------------------------------------------------------------------
+	 Interpolation order : 2
+	 Maxwell solver : Yee
+	 simulation duration = 5071.555450,   total number of iterations = 30199
+	 timestep = 0.167938 = 0.950000 x CFL,   time resolution = 5.954583
+	 Grid length: 320, 160
+	 Cell length: 0.25, 0.25, 0
+	 Number of cells: 1280, 640
+	 Spatial resolution: 4, 4
+ 
+
+ Electromagnetic boundary conditions
+ --------------------------------------------------------------------------------
+	 xmin periodic
+	 xmax periodic
+	 ymin reflective
+	 ymax reflective
+ 
+
+ Load Balancing: 
+ --------------------------------------------------------------------------------
+	 Computational load is initially balanced between MPI ranks. (initial_balance = true) 
+	 Happens: every 150 iterations
+	 Cell load coefficient = 1.000000
+	 Frozen particle load coefficient = 0.100000
+ 
+
+ Vectorization: 
+ --------------------------------------------------------------------------------
+	 Mode: off
+ 
+
+ Initializing MPI
+ --------------------------------------------------------------------------------
+	 applied topology for periodic BCs in x-direction
+	 MPI_THREAD_MULTIPLE enabled
+	 Number of MPI processes: 4
+	 Number of threads per MPI process : 64
+ 
+	 Number of patches: 64 x 32
+	 Number of cells in one patch: 20 x 20
+	 Dynamic load balancing: every 150 iterations
+ 
+
+ Initializing the restart environment
+ --------------------------------------------------------------------------------
+	 Code will stop after 2.000000 minutes
+		 Restarting fields and particles at step: 215
+		                             master file: /cluster/projects/nn9496k/Smilei2021a/Smilei/workingexample_diagnostic/tochat2//checkpoints/dump-00000-0000000000.h5
+	 Code will exit after dump
+ 
+ 
+
+ Initializing species
+ --------------------------------------------------------------------------------
+	 
+	 Creating Species #0: ion
+		 > Pusher: boris
+		 > Density profile: 2D user-defined function (uses numpy)
+	 
+	 Creating Species #1: eon
+		 > Pusher: boris
+		 > Density profile: 2D user-defined function (uses numpy)
+	 
+	 Creating Species #2: ionbg
+		 > Pusher: boris
+		 > Density profile: 2D built-in profile `constant` (value: 0.200000)
+	 
+	 Creating Species #3: eonbg
+		 > Pusher: boris
+		 > Density profile: 2D built-in profile `constant` (value: 0.200000)
+ 
+
+ Initializing External fields
+ --------------------------------------------------------------------------------
+	 External field Bx: 2D user-defined function (uses numpy)
+	 External field By: 2D user-defined function (uses numpy)
+ 
+
+ Initializing Patches
+ --------------------------------------------------------------------------------
+	 First patch created
+		 Approximately 10% of patches created
+		 Approximately 20% of patches created
+		 Approximately 30% of patches created
+		 Approximately 40% of patches created
+		 Approximately 50% of patches created
+		 Approximately 60% of patches created
+		 Approximately 70% of patches created
+		 Approximately 80% of patches created
+		 Approximately 90% of patches created
+	 All patches created
+ 
+
+ Creating Diagnostics, antennas, and external fields
+ --------------------------------------------------------------------------------
+	 Created ParticleBinning #0: species ion
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #1: species eon
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #2: species ion
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #3: species eon
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #4: species ion
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #5: species eon
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #6: species ion
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #7: species eon
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #8: species ion
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #9: species eon
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #10: species ion
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #11: species eon
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Diagnostic Fields #0  :
+		 Ex Ey Ez Bx By Bz Rho_ion Rho_eon Rho_ionbg Rho_eonbg Jx_ion Jx_eon Jx_ionbg Jx_eonbg Jy_ion Jy_eon Jy_ionbg Jy_eonbg Jz_ion Jz_eon Jz_ionbg Jz_eonbg 
+ 
+
+ finalize MPI
+ --------------------------------------------------------------------------------
+	 Done creating diagnostics, antennas, and external fields
+	 READING fields and particles for restart
+ 
+
+ Minimum memory consumption (does not include all temporary buffers)
+ --------------------------------------------------------------------------------
+              Particles: Master 4882 MB;   Max 786 MB;   Global 19.1 GB
+                 Fields: Master 70 MB;   Max 70 MB;   Global 0.277 GB
+            scalars.txt: Master 0 MB;   Max 0 MB;   Global 0 GB
+    ParticleBinning0.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning1.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning2.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning3.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning4.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning5.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning6.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning7.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning8.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning9.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+   ParticleBinning10.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+   ParticleBinning11.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+             Fields0.h5: Master 0 MB;   Max 0 MB;   Global 0 GB
+ 
+
+ Open files & initialize diagnostics
+ --------------------------------------------------------------------------------
+ 
+
+ Species creation summary
+ --------------------------------------------------------------------------------
+		 Species 0 (ion) created with 163840000 particles
+		 Species 1 (eon) created with 163840000 particles
+		 Species 2 (ionbg) created with 40960000 particles
+		 Species 3 (eonbg) created with 40960000 particles
+ 
+
+ Expected disk usage (approximate)
+ --------------------------------------------------------------------------------
+	 WARNING: disk usage by non-uniform particles maybe strongly underestimated,
+	    especially when particles are created at runtime (ionization, pair generation, etc.)
+	 
+	 Expected disk usage for diagnostics:
+		 File Fields0.h5: 40.25 G
+		 File scalars.txt: 293.46 K
+		 File ParticleBinning0.h5: 1.83 G
+		 File ParticleBinning1.h5: 1.83 G
+		 File ParticleBinning2.h5: 1.83 G
+		 File ParticleBinning3.h5: 1.83 G
+		 File ParticleBinning4.h5: 1.83 G
+		 File ParticleBinning5.h5: 1.83 G
+		 File ParticleBinning6.h5: 1.83 G
+		 File ParticleBinning7.h5: 1.83 G
+		 File ParticleBinning8.h5: 1.83 G
+		 File ParticleBinning9.h5: 1.83 G
+		 File ParticleBinning10.h5: 1.83 G
+		 File ParticleBinning11.h5: 1.83 G
+	 Total disk usage for diagnostics: 62.20 G
+	 
+	 Expected disk usage for each checkpoint:
+		 For fields: 87.89 M
+		 For particles: 19.07 G
+		 For diagnostics: 0 bytes
+	 Total disk usage for one checkpoint: 19.16 G
+ 
+
+ Keeping or closing the python runtime environment
+ --------------------------------------------------------------------------------
+	 Checking for cleanup() function:
+	 python cleanup function does not exist
+	 Keeping Python interpreter alive
+ 
+
+ Time-Loop started: number of time-steps n_time = 30199
+ --------------------------------------------------------------------------------
+	[WARNING] The following `push time` assumes a global number of 256 cores (hyperthreading is unknown)
+      timestep       sim time   cpu time [s]   (    diff [s] )   push time [ns]
+[b2313:31607:0:31776] Caught signal 11 (Segmentation fault: invalid permissions for mapped object at address 0x7f1f05ac3240)
+
+/cluster/software/GCCcore/9.3.0/include/c++/9.3.0/bits/stl_vector.h: [ std::vector<double, std::allocator<double> >::operator[]() ]
+      ...
+     1040       operator[](size_type __n) _GLIBCXX_NOEXCEPT
+     1041       {
+     1042 	__glibcxx_requires_subscript(__n);
+==>  1043 	return *(this->_M_impl._M_start + __n);
+     1044       }
+     1045 
+     1046       /**
+
+==== backtrace (tid:  31776) ====
+ 0 0x0000000000680ade std::vector<double, std::allocator<double> >::operator[]()  /cluster/software/GCCcore/9.3.0/include/c++/9.3.0/bits/stl_vector.h:1043
+ 1 0x00000000007dc0c8 Species::sortParticles()  /cluster/projects/nn9496k/Smilei2021a/Smilei/src/Species/Species.cpp:948
+ 2 0x00000000006de9d3 SyncVectorPatch::finalizeAndSortParticles()  /cluster/projects/nn9496k/Smilei2021a/Smilei/src/Patch/SyncVectorPatch.cpp:70
+ 3 0x0000000000694483 VectorPatch::finalizeAndSortParticles()  /cluster/projects/nn9496k/Smilei2021a/Smilei/src/Patch/VectorPatch.cpp:470
+ 4 0x0000000000694483 VectorPatch::operator()()  /cluster/projects/nn9496k/Smilei2021a/Smilei/src/Patch/VectorPatch.h:65
+ 5 0x0000000000694483 VectorPatch::finalizeAndSortParticles()  /cluster/projects/nn9496k/Smilei2021a/Smilei/src/Patch/VectorPatch.cpp:468
+ 6 0x00000000007b31ed main()  /cluster/projects/nn9496k/Smilei2021a/Smilei/src/Smilei.cpp:519
+ 7 0x000000000012ccc3 __kmp_invoke_microtask()  ???:0
+ 8 0x00000000000b2283 __kmp_invoke_task_func()  /nfs/site/proj/openmp/promo/20200205/tmp/lin_32e-rtl_int_5_nor_dyn.rel.c0.s0.t1..h1.w1-fxe16lin03/../../src/kmp_runtime.cpp:7516
+ 9 0x00000000000b124e __kmp_launch_thread()  /nfs/site/proj/openmp/promo/20200205/tmp/lin_32e-rtl_int_5_nor_dyn.rel.c0.s0.t1..h1.w1-fxe16lin03/../../src/kmp_runtime.cpp:6108
+10 0x000000000012d19c _INTERNAL27dd4e00::__kmp_launch_worker()  /nfs/site/proj/openmp/promo/20200205/tmp/lin_32e-rtl_int_5_nor_dyn.rel.c0.s0.t1..h1.w1-fxe16lin03/../../src/z_Linux_util.cpp:593
+11 0x0000000000007ea5 start_thread()  pthread_create.c:0
+12 0x00000000000fe8cd __clone()  ???:0
+=================================
+Stack trace (most recent call last) in thread 31776:
+#11   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#10   Object "/usr/lib64/libc.so.6", at 0x7f20337428cc, in clone
+#9    Object "/usr/lib64/libpthread.so.0", at 0x7f203420dea4, in 
+#8    Object "/cluster/software/iccifort/2020.1.217/compilers_and_libraries_2020.1.217/linux/compiler/lib/intel64/libiomp5.so", at 0x7f2033b3f19b, in 
+#7    Object "/cluster/software/iccifort/2020.1.217/compilers_and_libraries_2020.1.217/linux/compiler/lib/intel64/libiomp5.so", at 0x7f2033ac324d, in 
+#6    Object "/cluster/software/iccifort/2020.1.217/compilers_and_libraries_2020.1.217/linux/compiler/lib/intel64/libiomp5.so", at 0x7f2033ac4282, in 
+#5    Object "/cluster/software/iccifort/2020.1.217/compilers_and_libraries_2020.1.217/linux/compiler/lib/intel64/libiomp5.so", at 0x7f2033b3ecc2, in __kmp_invoke_microtask
+#4    Object "/cluster/projects/nn9496k/Smilei2021a/Smilei/smilei", at 0x7b31ec, in main
+#3    Object "/cluster/projects/nn9496k/Smilei2021a/Smilei/smilei", at 0x694482, in VectorPatch::finalizeAndSortParticles(Params&, SmileiMPI*, SimWindow*, double, Timers&, int)
+#2    Object "/cluster/projects/nn9496k/Smilei2021a/Smilei/smilei", at 0x6de9d2, in SyncVectorPatch::finalizeAndSortParticles(VectorPatch&, int, Params&, SmileiMPI*, Timers&, int)
+#1    Object "/cluster/projects/nn9496k/Smilei2021a/Smilei/smilei", at 0x7dc0c7, in Species::sortParticles(Params&, Patch*)
+#0    Object "/cluster/projects/nn9496k/Smilei2021a/Smilei/smilei", at 0x680ade, in Particles::overwriteParticle(unsigned int, Particles&, unsigned int)
+Segmentation fault (Signal sent by tkill() [0x3148200007b77])
+srun: error: b2313: task 3: Segmentation fault
+slurmstepd: error: *** STEP 279485.0 ON b2312 CANCELLED AT 2022-01-19T09:13:37 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 279485 ON b2312 CANCELLED AT 2022-01-19T09:13:37 ***
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+279485       PIC-tenfj+        256                                             00:03:39      0:0 
+279485.batch      batch        128        1   00:00:00          0   00:00:00   00:03:39     0:15 
+279485.exte+     extern        256        2   00:00:00          1   00:00:00   00:03:39      0:0 
+279485.0         smilei        256        4   00:00:04          3   00:02:55   00:03:41     0:15 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+279485                                                                           
+279485.batch      8206K          0      8206K       11              0         11 
+279485.exte+       835K          1       833K        1              1          1 
+279485.0       7754631K          1 6925856512       22              2         19 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+279485                                                                                                
+279485.batch        5.98M               0          5.98M        0.08M                0          0.08M 
+279485.exte+        0.00M               1          0.00M            0                1              0 
+279485.0         4937.70M               2       4844.34M        8.29M                0          8.23M 
+
+Job 279485 completed at Wed Jan 19 09:13:41 CET 2022

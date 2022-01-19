@@ -4,7 +4,7 @@
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=paul.tenfjord@uib.no
 #SBATCH --qos=devel
-#SBATCH --time=00:10:00
+#SBATCH --time=00:04:00
 
 #SBATCH --nodes=2    ### Number of Nodes
 #SBATCH --cpus-per-task=64    ### Number of threads per task (OMP threads)
@@ -22,4 +22,4 @@ module load SciPy-bundle/2020.11-intel-2020b
 module load HDF5/1.10.6-iompi-2020a
 
 
-srun /cluster/projects/nn9496k/Smilei2021a/Smilei/smilei ../new_baseline.py "Checkpoints.restart_dir='/cluster/projects/nn9496k/Smilei2021a/Smilei/workingexample_diagnostic/tochat/'"
+srun /cluster/projects/nn9496k/Smilei2021a/Smilei/smilei ../new_baseline.py "Checkpoints.restart_dir='/cluster/projects/nn9496k/Smilei2021a/Smilei/workingexample_diagnostic/tochat2/'"

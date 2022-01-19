@@ -1,0 +1,541 @@
+Starting job 279483 on b[5201-5202] at Wed Jan 19 09:06:24 CET 2022
+
+                    _            _
+  ___           _  | |        _  \ \   Version : 4.6-642-g22cdba5-master
+ / __|  _ __   (_) | |  ___  (_)  | |   
+ \__ \ | '  \   _  | | / -_)  _   | |
+ |___/ |_|_|_| |_| |_| \___| |_|  | |  
+                                 /_/    
+ 
+ 
+
+ Reading the simulation parameters
+ --------------------------------------------------------------------------------
+ HDF5 version 1.10.6
+	 Python version 3.8.6
+	 Parsing pyinit.py
+	 Parsing 4.6-642-g22cdba5-master
+	 Parsing pyprofiles.py
+	 Parsing new_baseline.py
+	 Parsing pycontrol.py
+	 Check for function preprocess()
+	 python preprocess function does not exist
+	 Calling python _smilei_check
+	 Calling python _prepare_checkpoint_dir
+	 Calling python _keep_python_running() :
+	[WARNING] Patches distribution: hilbertian
+	[WARNING] simulation_time has been redefined from 5071.723388 to 5071.555450 to match timestep.
+ 
+
+ Geometry: 2Dcartesian
+ --------------------------------------------------------------------------------
+	 Interpolation order : 2
+	 Maxwell solver : Yee
+	 simulation duration = 5071.555450,   total number of iterations = 30199
+	 timestep = 0.167938 = 0.950000 x CFL,   time resolution = 5.954583
+	 Grid length: 320, 160
+	 Cell length: 0.25, 0.25, 0
+	 Number of cells: 1280, 640
+	 Spatial resolution: 4, 4
+ 
+
+ Electromagnetic boundary conditions
+ --------------------------------------------------------------------------------
+	 xmin periodic
+	 xmax periodic
+	 ymin reflective
+	 ymax reflective
+ 
+
+ Load Balancing: 
+ --------------------------------------------------------------------------------
+	 Computational load is initially balanced between MPI ranks. (initial_balance = true) 
+	 Happens: every 150 iterations
+	 Cell load coefficient = 1.000000
+	 Frozen particle load coefficient = 0.100000
+ 
+
+ Vectorization: 
+ --------------------------------------------------------------------------------
+	 Mode: off
+ 
+
+ Initializing MPI
+ --------------------------------------------------------------------------------
+	 applied topology for periodic BCs in x-direction
+	 MPI_THREAD_MULTIPLE enabled
+	 Number of MPI processes: 4
+	 Number of threads per MPI process : 64
+ 
+	 Number of patches: 64 x 32
+	 Number of cells in one patch: 20 x 20
+	 Dynamic load balancing: every 150 iterations
+ 
+
+ Initializing the restart environment
+ --------------------------------------------------------------------------------
+	 Code will stop after 2.000000 minutes
+	 Code will exit after dump
+ 
+ 
+
+ Initializing species
+ --------------------------------------------------------------------------------
+	 
+	 Creating Species #0: ion
+		 > Pusher: boris
+		 > Density profile: 2D user-defined function (uses numpy)
+	 
+	 Creating Species #1: eon
+		 > Pusher: boris
+		 > Density profile: 2D user-defined function (uses numpy)
+	 
+	 Creating Species #2: ionbg
+		 > Pusher: boris
+		 > Density profile: 2D built-in profile `constant` (value: 0.200000)
+	 
+	 Creating Species #3: eonbg
+		 > Pusher: boris
+		 > Density profile: 2D built-in profile `constant` (value: 0.200000)
+ 
+
+ Initializing External fields
+ --------------------------------------------------------------------------------
+	 External field Bx: 2D user-defined function (uses numpy)
+	 External field By: 2D user-defined function (uses numpy)
+ 
+
+ Initializing Patches
+ --------------------------------------------------------------------------------
+	 First patch created
+		 Approximately 10% of patches created
+		 Approximately 20% of patches created
+		 Approximately 30% of patches created
+		 Approximately 40% of patches created
+		 Approximately 50% of patches created
+		 Approximately 60% of patches created
+		 Approximately 70% of patches created
+		 Approximately 80% of patches created
+		 Approximately 90% of patches created
+	 All patches created
+ 
+
+ Creating Diagnostics, antennas, and external fields
+ --------------------------------------------------------------------------------
+	 Created ParticleBinning #0: species ion
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #1: species eon
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #2: species ion
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #3: species eon
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #4: species ion
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #5: species eon
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #6: species ion
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #7: species eon
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #8: species ion
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #9: species eon
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #10: species ion
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Created ParticleBinning #11: species eon
+		 Axis x from 0 to 320 in 1281 steps
+		 Axis y from 0 to 160 in 641 steps
+	 Diagnostic Fields #0  :
+		 Ex Ey Ez Bx By Bz Rho_ion Rho_eon Rho_ionbg Rho_eonbg Jx_ion Jx_eon Jx_ionbg Jx_eonbg Jy_ion Jy_eon Jy_ionbg Jy_eonbg Jz_ion Jz_eon Jz_ionbg Jz_eonbg 
+ 
+
+ finalize MPI
+ --------------------------------------------------------------------------------
+	 Done creating diagnostics, antennas, and external fields
+ 
+
+ Minimum memory consumption (does not include all temporary buffers)
+ --------------------------------------------------------------------------------
+              Particles: Master 4882 MB;   Max 786 MB;   Global 19.1 GB
+                 Fields: Master 70 MB;   Max 70 MB;   Global 0.277 GB
+            scalars.txt: Master 0 MB;   Max 0 MB;   Global 0 GB
+    ParticleBinning0.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning1.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning2.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning3.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning4.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning5.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning6.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning7.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning8.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+    ParticleBinning9.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+   ParticleBinning10.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+   ParticleBinning11.h5: Master 6 MB;   Max 6 MB;   Global 0.0245 GB
+             Fields0.h5: Master 0 MB;   Max 0 MB;   Global 0 GB
+ 
+
+ Initial fields setup
+ --------------------------------------------------------------------------------
+	 Solving Poisson at time t = 0
+ 
+
+ Initializing E field through Poisson solver
+ --------------------------------------------------------------------------------
+	 Poisson solver converged at iteration: 1086, relative err is ctrl = 0.997739 x 1e-14
+	 Poisson equation solved. Maximum err = 0.000000 at i= -1
+ Time in Poisson : 2.057268
+	 Applying external fields at time t = 0
+	 Applying prescribed fields at time t = 0
+	 Applying antennas at time t = 0
+ 
+
+ Open files & initialize diagnostics
+ --------------------------------------------------------------------------------
+ 
+
+ Running diags at time t = 0
+ --------------------------------------------------------------------------------
+ 
+
+ Species creation summary
+ --------------------------------------------------------------------------------
+		 Species 0 (ion) created with 163840000 particles
+		 Species 1 (eon) created with 163840000 particles
+		 Species 2 (ionbg) created with 40960000 particles
+		 Species 3 (eonbg) created with 40960000 particles
+ 
+
+ Expected disk usage (approximate)
+ --------------------------------------------------------------------------------
+	 WARNING: disk usage by non-uniform particles maybe strongly underestimated,
+	    especially when particles are created at runtime (ionization, pair generation, etc.)
+	 
+	 Expected disk usage for diagnostics:
+		 File Fields0.h5: 40.65 G
+		 File scalars.txt: 296.39 K
+		 File ParticleBinning0.h5: 1.85 G
+		 File ParticleBinning1.h5: 1.85 G
+		 File ParticleBinning2.h5: 1.85 G
+		 File ParticleBinning3.h5: 1.85 G
+		 File ParticleBinning4.h5: 1.85 G
+		 File ParticleBinning5.h5: 1.85 G
+		 File ParticleBinning6.h5: 1.85 G
+		 File ParticleBinning7.h5: 1.85 G
+		 File ParticleBinning8.h5: 1.85 G
+		 File ParticleBinning9.h5: 1.85 G
+		 File ParticleBinning10.h5: 1.85 G
+		 File ParticleBinning11.h5: 1.85 G
+	 Total disk usage for diagnostics: 62.83 G
+	 
+	 Expected disk usage for each checkpoint:
+		 For fields: 87.89 M
+		 For particles: 19.07 G
+		 For diagnostics: 0 bytes
+	 Total disk usage for one checkpoint: 19.16 G
+ 
+
+ Keeping or closing the python runtime environment
+ --------------------------------------------------------------------------------
+	 Checking for cleanup() function:
+	 python cleanup function does not exist
+	 Keeping Python interpreter alive
+ 
+
+ Time-Loop started: number of time-steps n_time = 30199
+ --------------------------------------------------------------------------------
+	[WARNING] The following `push time` assumes a global number of 256 cores (hyperthreading is unknown)
+      timestep       sim time   cpu time [s]   (    diff [s] )   push time [ns]
+       1/30199     2.5191e-01     1.0701e+00   (  1.0701e+00 )             668 
+       2/30199     4.1984e-01     1.6752e+00   (  6.0511e-01 )             378 
+       3/30199     5.8778e-01     2.2297e+00   (  5.5443e-01 )             346 
+       4/30199     7.5572e-01     2.7344e+00   (  5.0478e-01 )             315 
+       5/30199     9.2366e-01     3.2083e+00   (  4.7384e-01 )             296 
+       6/30199     1.0916e+00     3.6685e+00   (  4.6017e-01 )             287 
+       7/30199     1.2595e+00     4.1261e+00   (  4.5768e-01 )             286 
+       8/30199     1.4275e+00     4.5714e+00   (  4.4530e-01 )             278 
+       9/30199     1.5954e+00     5.0952e+00   (  5.2373e-01 )             327 
+      10/30199     1.7633e+00     5.5411e+00   (  4.4590e-01 )             278 
+      11/30199     1.9313e+00     5.9673e+00   (  4.2619e-01 )             266 
+      12/30199     2.0992e+00     6.4010e+00   (  4.3377e-01 )             271 
+      13/30199     2.2672e+00     6.8320e+00   (  4.3093e-01 )             269 
+      14/30199     2.4351e+00     7.2551e+00   (  4.2318e-01 )             264 
+      15/30199     2.6030e+00     7.6718e+00   (  4.1668e-01 )             260 
+      16/30199     2.7710e+00     8.0827e+00   (  4.1087e-01 )             256 
+      17/30199     2.9389e+00     8.4862e+00   (  4.0350e-01 )             252 
+      18/30199     3.1069e+00     8.8887e+00   (  4.0247e-01 )             251 
+      19/30199     3.2748e+00     9.2920e+00   (  4.0335e-01 )             252 
+      20/30199     3.4427e+00     9.6958e+00   (  4.0381e-01 )             252 
+      21/30199     3.6107e+00     1.0099e+01   (  4.0359e-01 )             252 
+      22/30199     3.7786e+00     1.0500e+01   (  4.0040e-01 )             250 
+      23/30199     3.9465e+00     1.0903e+01   (  4.0354e-01 )             252 
+      24/30199     4.1145e+00     1.1301e+01   (  3.9791e-01 )             248 
+      25/30199     4.2824e+00     1.1699e+01   (  3.9744e-01 )             248 
+      26/30199     4.4504e+00     1.2093e+01   (  3.9430e-01 )             246 
+      27/30199     4.6183e+00     1.2491e+01   (  3.9782e-01 )             248 
+      28/30199     4.7862e+00     1.2887e+01   (  3.9644e-01 )             247 
+      29/30199     4.9542e+00     1.3285e+01   (  3.9767e-01 )             248 
+      30/30199     5.1221e+00     1.3679e+01   (  3.9387e-01 )             246 
+      31/30199     5.2900e+00     1.4073e+01   (  3.9444e-01 )             246 
+      32/30199     5.4580e+00     1.4462e+01   (  3.8894e-01 )             243 
+      33/30199     5.6259e+00     1.4849e+01   (  3.8687e-01 )             241 
+      34/30199     5.7939e+00     1.5250e+01   (  4.0102e-01 )             250 
+      35/30199     5.9618e+00     1.5637e+01   (  3.8709e-01 )             241 
+      36/30199     6.1297e+00     1.6024e+01   (  3.8690e-01 )             241 
+      37/30199     6.2977e+00     1.6410e+01   (  3.8556e-01 )             240 
+      38/30199     6.4656e+00     1.6798e+01   (  3.8828e-01 )             242 
+      39/30199     6.6335e+00     1.7186e+01   (  3.8791e-01 )             242 
+      40/30199     6.8015e+00     1.7576e+01   (  3.8992e-01 )             243 
+      41/30199     6.9694e+00     1.7966e+01   (  3.9008e-01 )             243 
+      42/30199     7.1374e+00     1.8351e+01   (  3.8525e-01 )             240 
+      43/30199     7.3053e+00     1.8735e+01   (  3.8388e-01 )             239 
+      44/30199     7.4732e+00     1.9119e+01   (  3.8439e-01 )             240 
+      45/30199     7.6412e+00     1.9505e+01   (  3.8522e-01 )             240 
+      46/30199     7.8091e+00     1.9890e+01   (  3.8507e-01 )             240 
+      47/30199     7.9770e+00     2.0274e+01   (  3.8415e-01 )             240 
+      48/30199     8.1450e+00     2.0658e+01   (  3.8411e-01 )             240 
+      49/30199     8.3129e+00     2.1041e+01   (  3.8290e-01 )             239 
+      50/30199     8.4809e+00     2.1428e+01   (  3.8697e-01 )             241 
+      51/30199     8.6488e+00     2.1818e+01   (  3.8979e-01 )             243 
+      52/30199     8.8167e+00     2.2201e+01   (  3.8298e-01 )             239 
+      53/30199     8.9847e+00     2.2581e+01   (  3.8003e-01 )             237 
+      54/30199     9.1526e+00     2.2963e+01   (  3.8264e-01 )             239 
+      55/30199     9.3206e+00     2.3343e+01   (  3.7995e-01 )             237 
+      56/30199     9.4885e+00     2.3726e+01   (  3.8310e-01 )             239 
+      57/30199     9.6564e+00     2.4109e+01   (  3.8286e-01 )             239 
+      58/30199     9.8244e+00     2.4489e+01   (  3.7996e-01 )             237 
+      59/30199     9.9923e+00     2.4867e+01   (  3.7763e-01 )             236 
+      60/30199     1.0160e+01     2.5251e+01   (  3.8458e-01 )             240 
+      61/30199     1.0328e+01     2.5630e+01   (  3.7854e-01 )             236 
+      62/30199     1.0496e+01     2.6011e+01   (  3.8066e-01 )             237 
+      63/30199     1.0664e+01     2.6389e+01   (  3.7823e-01 )             236 
+      64/30199     1.0832e+01     2.6764e+01   (  3.7526e-01 )             234 
+      65/30199     1.1000e+01     2.7142e+01   (  3.7765e-01 )             236 
+      66/30199     1.1168e+01     2.7521e+01   (  3.7976e-01 )             237 
+      67/30199     1.1336e+01     2.7899e+01   (  3.7787e-01 )             236 
+      68/30199     1.1504e+01     2.8277e+01   (  3.7784e-01 )             236 
+      69/30199     1.1672e+01     2.8655e+01   (  3.7802e-01 )             236 
+      70/30199     1.1840e+01     2.9034e+01   (  3.7884e-01 )             236 
+      71/30199     1.2008e+01     2.9412e+01   (  3.7761e-01 )             236 
+      72/30199     1.2175e+01     2.9788e+01   (  3.7651e-01 )             235 
+      73/30199     1.2343e+01     3.0176e+01   (  3.8791e-01 )             242 
+      74/30199     1.2511e+01     3.0552e+01   (  3.7618e-01 )             235 
+      75/30199     1.2679e+01     3.0928e+01   (  3.7590e-01 )             234 
+      76/30199     1.2847e+01     3.1311e+01   (  3.8306e-01 )             239 
+      77/30199     1.3015e+01     3.1693e+01   (  3.8147e-01 )             238 
+      78/30199     1.3183e+01     3.2069e+01   (  3.7639e-01 )             235 
+      79/30199     1.3351e+01     3.2448e+01   (  3.7922e-01 )             237 
+      80/30199     1.3519e+01     3.2828e+01   (  3.8019e-01 )             237 
+      81/30199     1.3687e+01     3.3203e+01   (  3.7507e-01 )             234 
+      82/30199     1.3855e+01     3.3579e+01   (  3.7586e-01 )             234 
+      83/30199     1.4023e+01     3.3955e+01   (  3.7522e-01 )             234 
+      84/30199     1.4191e+01     3.4332e+01   (  3.7738e-01 )             235 
+      85/30199     1.4359e+01     3.4708e+01   (  3.7621e-01 )             235 
+      86/30199     1.4527e+01     3.5101e+01   (  3.9252e-01 )             245 
+      87/30199     1.4695e+01     3.5481e+01   (  3.8003e-01 )             237 
+      88/30199     1.4863e+01     3.5862e+01   (  3.8109e-01 )             238 
+      89/30199     1.5030e+01     3.6236e+01   (  3.7471e-01 )             234 
+      90/30199     1.5198e+01     3.6614e+01   (  3.7722e-01 )             235 
+      91/30199     1.5366e+01     3.6993e+01   (  3.7884e-01 )             236 
+      92/30199     1.5534e+01     3.7369e+01   (  3.7630e-01 )             235 
+      93/30199     1.5702e+01     3.7746e+01   (  3.7723e-01 )             235 
+      94/30199     1.5870e+01     3.8122e+01   (  3.7599e-01 )             234 
+      95/30199     1.6038e+01     3.8498e+01   (  3.7620e-01 )             235 
+      96/30199     1.6206e+01     3.8876e+01   (  3.7728e-01 )             235 
+      97/30199     1.6374e+01     3.9251e+01   (  3.7543e-01 )             234 
+      98/30199     1.6542e+01     3.9627e+01   (  3.7610e-01 )             235 
+      99/30199     1.6710e+01     4.0007e+01   (  3.7956e-01 )             237 
+     100/30199     1.6878e+01     4.2441e+01   (  2.4343e+00 )            1521 
+     101/30199     1.7046e+01     4.3131e+01   (  6.8999e-01 )             431 
+     102/30199     1.7214e+01     4.3613e+01   (  4.8182e-01 )             301 
+     103/30199     1.7382e+01     4.4060e+01   (  4.4704e-01 )             279 
+     104/30199     1.7550e+01     4.4475e+01   (  4.1511e-01 )             259 
+     105/30199     1.7717e+01     4.4908e+01   (  4.3313e-01 )             270 
+     106/30199     1.7885e+01     4.5325e+01   (  4.1728e-01 )             260 
+     107/30199     1.8053e+01     4.5716e+01   (  3.9056e-01 )             244 
+     108/30199     1.8221e+01     4.6101e+01   (  3.8532e-01 )             240 
+     109/30199     1.8389e+01     4.6484e+01   (  3.8279e-01 )             239 
+     110/30199     1.8557e+01     4.6861e+01   (  3.7689e-01 )             235 
+     111/30199     1.8725e+01     4.7240e+01   (  3.7926e-01 )             237 
+     112/30199     1.8893e+01     4.7616e+01   (  3.7550e-01 )             234 
+     113/30199     1.9061e+01     4.7989e+01   (  3.7290e-01 )             233 
+     114/30199     1.9229e+01     4.8364e+01   (  3.7539e-01 )             234 
+     115/30199     1.9397e+01     4.8735e+01   (  3.7071e-01 )             231 
+     116/30199     1.9565e+01     4.9105e+01   (  3.6991e-01 )             231 
+     117/30199     1.9733e+01     4.9474e+01   (  3.6967e-01 )             231 
+     118/30199     1.9901e+01     4.9843e+01   (  3.6852e-01 )             230 
+     119/30199     2.0069e+01     5.0217e+01   (  3.7418e-01 )             233 
+     120/30199     2.0237e+01     5.0584e+01   (  3.6707e-01 )             229 
+     121/30199     2.0404e+01     5.0952e+01   (  3.6801e-01 )             230 
+     122/30199     2.0572e+01     5.1317e+01   (  3.6540e-01 )             228 
+     123/30199     2.0740e+01     5.1681e+01   (  3.6404e-01 )             227 
+     124/30199     2.0908e+01     5.2045e+01   (  3.6321e-01 )             227 
+     125/30199     2.1076e+01     5.2408e+01   (  3.6383e-01 )             227 
+     126/30199     2.1244e+01     5.2776e+01   (  3.6754e-01 )             229 
+     127/30199     2.1412e+01     5.3136e+01   (  3.6040e-01 )             225 
+     128/30199     2.1580e+01     5.3499e+01   (  3.6289e-01 )             226 
+     129/30199     2.1748e+01     5.3859e+01   (  3.5979e-01 )             224 
+     130/30199     2.1916e+01     5.4222e+01   (  3.6279e-01 )             226 
+     131/30199     2.2084e+01     5.4580e+01   (  3.5764e-01 )             223 
+     132/30199     2.2252e+01     5.4948e+01   (  3.6889e-01 )             230 
+     133/30199     2.2420e+01     5.5309e+01   (  3.6084e-01 )             225 
+     134/30199     2.2588e+01     5.5678e+01   (  3.6899e-01 )             230 
+     135/30199     2.2756e+01     5.6047e+01   (  3.6912e-01 )             230 
+     136/30199     2.2924e+01     5.6410e+01   (  3.6285e-01 )             226 
+     137/30199     2.3091e+01     5.6773e+01   (  3.6285e-01 )             226 
+     138/30199     2.3259e+01     5.7139e+01   (  3.6547e-01 )             228 
+     139/30199     2.3427e+01     5.7499e+01   (  3.6077e-01 )             225 
+     140/30199     2.3595e+01     5.7860e+01   (  3.6099e-01 )             225 
+     141/30199     2.3763e+01     5.8224e+01   (  3.6397e-01 )             227 
+     142/30199     2.3931e+01     5.8586e+01   (  3.6176e-01 )             226 
+     143/30199     2.4099e+01     5.8951e+01   (  3.6511e-01 )             228 
+     144/30199     2.4267e+01     5.9315e+01   (  3.6408e-01 )             227 
+     145/30199     2.4435e+01     5.9675e+01   (  3.5975e-01 )             224 
+     146/30199     2.4603e+01     6.0037e+01   (  3.6196e-01 )             226 
+     147/30199     2.4771e+01     6.0400e+01   (  3.6276e-01 )             226 
+     148/30199     2.4939e+01     6.0769e+01   (  3.6926e-01 )             230 
+     149/30199     2.5107e+01     6.1134e+01   (  3.6523e-01 )             228 
+     150/30199     2.5275e+01     6.1502e+01   (  3.6774e-01 )             229 
+     151/30199     2.5443e+01     6.1862e+01   (  3.5988e-01 )             224 
+     152/30199     2.5611e+01     6.2221e+01   (  3.5943e-01 )             224 
+     153/30199     2.5778e+01     6.2580e+01   (  3.5882e-01 )             224 
+     154/30199     2.5946e+01     6.2940e+01   (  3.6019e-01 )             225 
+     155/30199     2.6114e+01     6.3300e+01   (  3.5993e-01 )             224 
+     156/30199     2.6282e+01     6.3657e+01   (  3.5698e-01 )             223 
+     157/30199     2.6450e+01     6.4022e+01   (  3.6443e-01 )             227 
+     158/30199     2.6618e+01     6.4377e+01   (  3.5534e-01 )             222 
+     159/30199     2.6786e+01     6.4734e+01   (  3.5673e-01 )             222 
+     160/30199     2.6954e+01     6.5124e+01   (  3.9001e-01 )             243 
+     161/30199     2.7122e+01     6.5483e+01   (  3.5900e-01 )             224 
+     162/30199     2.7290e+01     6.5841e+01   (  3.5859e-01 )             224 
+     163/30199     2.7458e+01     6.6199e+01   (  3.5788e-01 )             223 
+     164/30199     2.7626e+01     6.6558e+01   (  3.5881e-01 )             224 
+     165/30199     2.7794e+01     6.6919e+01   (  3.6089e-01 )             225 
+     166/30199     2.7962e+01     6.7283e+01   (  3.6388e-01 )             227 
+     167/30199     2.8130e+01     6.7640e+01   (  3.5744e-01 )             223 
+     168/30199     2.8298e+01     6.7999e+01   (  3.5891e-01 )             224 
+     169/30199     2.8465e+01     6.8359e+01   (  3.5983e-01 )             224 
+     170/30199     2.8633e+01     6.8716e+01   (  3.5743e-01 )             223 
+     171/30199     2.8801e+01     6.9079e+01   (  3.6294e-01 )             226 
+     172/30199     2.8969e+01     6.9432e+01   (  3.5248e-01 )             220 
+     173/30199     2.9137e+01     6.9791e+01   (  3.5941e-01 )             224 
+     174/30199     2.9305e+01     7.0149e+01   (  3.5836e-01 )             223 
+     175/30199     2.9473e+01     7.0506e+01   (  3.5659e-01 )             222 
+     176/30199     2.9641e+01     7.0866e+01   (  3.5974e-01 )             224 
+     177/30199     2.9809e+01     7.1221e+01   (  3.5562e-01 )             222 
+     178/30199     2.9977e+01     7.1581e+01   (  3.5933e-01 )             224 
+     179/30199     3.0145e+01     7.1936e+01   (  3.5540e-01 )             222 
+     180/30199     3.0313e+01     7.2289e+01   (  3.5324e-01 )             220 
+     181/30199     3.0481e+01     7.2646e+01   (  3.5636e-01 )             222 
+     182/30199     3.0649e+01     7.3003e+01   (  3.5714e-01 )             223 
+     183/30199     3.0817e+01     7.3357e+01   (  3.5365e-01 )             221 
+     184/30199     3.0985e+01     7.3713e+01   (  3.5668e-01 )             222 
+     185/30199     3.1152e+01     7.4069e+01   (  3.5609e-01 )             222 
+     186/30199     3.1320e+01     7.4431e+01   (  3.6214e-01 )             226 
+     187/30199     3.1488e+01     7.4796e+01   (  3.6405e-01 )             227 
+     188/30199     3.1656e+01     7.5171e+01   (  3.7591e-01 )             234 
+     189/30199     3.1824e+01     7.5528e+01   (  3.5656e-01 )             222 
+     190/30199     3.1992e+01     7.5911e+01   (  3.8325e-01 )             239 
+     191/30199     3.2160e+01     7.6281e+01   (  3.6985e-01 )             231 
+     192/30199     3.2328e+01     7.6637e+01   (  3.5627e-01 )             222 
+     193/30199     3.2496e+01     7.7011e+01   (  3.7333e-01 )             233 
+     194/30199     3.2664e+01     7.7371e+01   (  3.6057e-01 )             225 
+     195/30199     3.2832e+01     7.7730e+01   (  3.5822e-01 )             223 
+     196/30199     3.3000e+01     7.8089e+01   (  3.5980e-01 )             224 
+     197/30199     3.3168e+01     7.8450e+01   (  3.6108e-01 )             225 
+     198/30199     3.3336e+01     7.8829e+01   (  3.7824e-01 )             236 
+     199/30199     3.3504e+01     7.9191e+01   (  3.6213e-01 )             226 
+     200/30199     3.3672e+01     8.1698e+01   (  2.5072e+00 )            1567 
+     201/30199     3.3839e+01     8.2388e+01   (  6.8967e-01 )             431 
+     202/30199     3.4007e+01     8.2868e+01   (  4.8045e-01 )             300 
+     203/30199     3.4175e+01     8.3307e+01   (  4.3934e-01 )             274 
+     204/30199     3.4343e+01     8.3727e+01   (  4.2001e-01 )             262 
+     205/30199     3.4511e+01     8.4139e+01   (  4.1152e-01 )             257 
+     206/30199     3.4679e+01     8.4537e+01   (  3.9793e-01 )             248 
+     207/30199     3.4847e+01     8.4961e+01   (  4.2413e-01 )             265 
+     208/30199     3.5015e+01     8.5364e+01   (  4.0339e-01 )             252 
+     209/30199     3.5183e+01     8.5751e+01   (  3.8651e-01 )             241 
+     210/30199     3.5351e+01     8.6141e+01   (  3.9014e-01 )             243 
+     211/30199     3.5519e+01     8.6529e+01   (  3.8757e-01 )             242 
+     212/30199     3.5687e+01     8.6916e+01   (  3.8691e-01 )             241 
+     213/30199     3.5855e+01     8.7299e+01   (  3.8317e-01 )             239 
+ Reached time limit : 2.0008e+00 minutes. Dump timestep : 215
+     214/30199     3.6023e+01     8.7681e+01   (  3.8231e-01 )             238 
+ Step 215 : DUMP fields and particles 0
+     215/30199     3.6191e+01     9.6665e+01   (  8.9839e+00 )            5614 
+ 
+
+ End time loop, time dual = 3.6191e+01
+ --------------------------------------------------------------------------------
+ 
+
+ Time profiling : (print time > 0.001%)
+ --------------------------------------------------------------------------------
+ Time_in_time_loop	9.6669e+01	9.0164e+01% coverage
+ 	           Particles	7.053799e+01	7.3e+01%
+ 	             Maxwell	1.951264e-01	    <1%
+ 	         Diagnostics	3.078755e+00	3.2e+00%
+ 	      Sync Particles	9.960062e+00	1.0e+01%
+ 	         Sync Fields	1.177711e-01	    <1%
+ 	      Sync Densities	3.411055e+00	3.5e+00%
+ 
+	 Printed times are averaged per MPI process
+ 		 See advanced metrics in profil.txt
+ 
+	Diagnostics profile :
+ 		         scalars.txt	2.5e-01
+ 		 ParticleBinning0.h5	1.3e-01
+ 		 ParticleBinning1.h5	1.3e-01
+ 		 ParticleBinning2.h5	1.3e-01
+ 		 ParticleBinning3.h5	1.3e-01
+ 		 ParticleBinning4.h5	1.4e-01
+ 		 ParticleBinning5.h5	1.3e-01
+ 		 ParticleBinning6.h5	1.3e-01
+ 		 ParticleBinning7.h5	1.3e-01
+ 		 ParticleBinning8.h5	1.3e-01
+ 		 ParticleBinning9.h5	1.3e-01
+ 		ParticleBinning10.h5	1.3e-01
+ 		ParticleBinning11.h5	1.4e-01
+ 		          Fields0.h5	1.2e+00
+ 
+
+ END
+ --------------------------------------------------------------------------------
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+279483       PIC-tenfj+        256                                             00:02:14      0:0 
+279483.batch      batch        128        1   00:00:00          0   00:00:00   00:02:14      0:0 
+279483.exte+     extern        256        2   00:00:00          1   00:00:00   00:02:15      0:0 
+279483.0         smilei        256        4   01:24:37          3   01:28:37   00:02:13      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+279483                                                                           
+279483.batch      8211K          0      8211K       11              0         11 
+279483.exte+       835K          0       833K        1              1          1 
+279483.0      12559826K          2 12504522.+       21              2         19 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+279483                                                                                                
+279483.batch        6.00M               0          6.00M        0.09M                0          0.09M 
+279483.exte+        0.00M               1          0.00M            0                1              0 
+279483.0          126.46M               0        126.30M     5146.37M                3       4731.61M 
+
+Job 279483 completed at Wed Jan 19 09:08:40 CET 2022
